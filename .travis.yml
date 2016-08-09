@@ -13,17 +13,19 @@ notifications:
 
 git:
   submodules: false
-
+  
+addons:
+  apt:
+    packages:
+    - libx11-dev
+    - libvulkan-dev
+    - g++-5
+    - clang-3.6
+    - libstdc++-4.8-dev
+    
 before_install:
-  sudo apt-get install libx11-dev
-  sudo apt-get install libvulkan-dev
   - if [ "$CXX" = "g++" ]; then
-      sudo apt-get install g++-5 -qq;
       export CXX="g++-5" CC="gcc-5";
-    fi
-  - if [ "$CXX" = "clang++" ]; then
-      sudo apt-get install clang-3.6 -qq;
-      sudo apt-get install libstdc++-4.8-dev;
     fi
 
 before_script:
