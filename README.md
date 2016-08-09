@@ -22,3 +22,5 @@ This channel is dedicated **exclusively to development-related topics**. Once th
 
 ### Disclaimer
 The goal of this project is to experiment, research, and educate on the topic of emulation of modern devices and operating systems. **It is not for enabling illegal activity**. All information is obtained via reverse engineering of legally purchased devices and games and information made public on the Internet.
+
+Trigger travis
