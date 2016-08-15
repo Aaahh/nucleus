@@ -16,6 +16,8 @@ git:
   
 addons:
   apt:
+    sources:
+    - debian-sid
     packages:
     - libx11-dev
     - libvulkan-dev
