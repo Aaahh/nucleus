@@ -22,6 +22,7 @@ addons:
     - g++-5
     - clang-3.6
     - libstdc++-4.8-dev
+    - libvulkan-dev
     
 before_install:
   - if [ "$CXX" = "g++" ]; then
